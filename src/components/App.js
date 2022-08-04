@@ -29,7 +29,7 @@ function App() {
         <button onClick={toggleForm} >Show/hide new poem form</button>
         {showForm ? <NewPoemForm setRefresh={setRefresh} /> : null}
       </div>
-      <PoemsContainer poems={poems} />
+      <PoemsContainer poems={poems} setRefresh={setRefresh} />
     </div>
   );
 }

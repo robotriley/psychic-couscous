@@ -56,6 +56,78 @@ button {
   font-size: 1em;
   background: #04e8ff;
   border: solid black 1px;
+  border-radius: 5px;
   padding: 0.5em;
   cursor: pointer;
 }
+
+button:hover {
+  font-weight: bold;
+  font-size: 1em;
+  background: #79f4ff;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.del {
+    font-weight: bold;
+    font-size: 0.9em;
+    background: #f86060;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.del:hover {
+    font-weight: bold;
+    font-size: 0.9em;
+    background: #fe9292;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.read {
+    font-weight: bold;
+    font-size: 1em;
+    background: gold;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+.read:hover {
+    font-weight: bold;
+    font-size: 1em;
+    background: goldenrod;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+
+  .fav {
+      cursor: pointer;
+      color: goldenrod;
+      background-color: transparent;
+      border: 0px;
+  }
+  .fav:hover {
+    color: goldenrod;
+    background-color: transparent;
+    border: 0px;
+  }
+
+  .faved {
+    color: goldenrod;
+    background-color: transparent;
+    border: 0px;
+  }
+  .faved:hover {
+    color: goldenrod;
+    background-color: transparent;
+    border: 0px;
+  }

@@ -25,10 +25,22 @@
       "author": "Alan R. Turner."
     },
     {
-      "title": "The Boat",
+      "title": "My Boat",
       "author": "Riley Soloner",
-      "content": "Here I float, in my boat. Round and round, round the moat.",
+      "content": "Here I float, inside my boat. Round and round, round the moat.",
       "id": 5
+    },
+    {
+      "title": "My Boat, part II",
+      "author": "Riley Soloner",
+      "content": "Oh Boat, my Boat. You are the GOAT. Greatest Of All Time, boat boat boat.",
+      "id": 6
+    },
+    {
+      "title": "My Favorites",
+      "author": "Riley Soloner",
+      "content": "I remain unsure as to how one might conditionally render a poem within my newly created \"favorite poems\" list. Alas.........",
+      "id": 7
     }
   ]
 }

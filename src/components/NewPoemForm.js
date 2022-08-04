@@ -10,7 +10,7 @@ function NewPoemForm( {setRefresh }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("submitted!")
+    // console.log("submitted!")
     fetch('http://localhost:8004/poems', {
       method: "POST",
       headers: {
@@ -25,10 +25,12 @@ function NewPoemForm( {setRefresh }) {
     setTitle("")
     setAuthor("")
     setContent("")
+    alert("Thank you for submitting! Scroll to the bottom of the page to see your new contribution.")
     setRefresh(prev => !prev)
   }
 
   return (
+    <div>
     <form onSubmit={handleSubmit} className="new-poem-form">
       <input 
         type="text" 
@@ -50,6 +52,12 @@ function NewPoemForm( {setRefresh }) {
       />
       <input type="submit" value="Share your masterpiece" />
     </form>
+    <h3>Favorite Poems</h3>
+    <ul>
+      <li>
+      </li>
+    </ul>
+    </div>
   );
 }
 
