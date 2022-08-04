@@ -1,14 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 
-function Poem() {
+function Poem({poem} ) {
+  const {title, content, author} = poem
+
+  const [isRead, setIsRead] = useState(true)
+
+  const toggleRead = () => {
+    setIsRead((isRead) => !isRead)
+  }
+
   return (
     <div>
-      <h3>Title</h3>
-      <p>Content</p>
+      <h3>{ title }</h3>
+      <p>{ content }</p>
       <p>
-        <strong>- By Author</strong>
+        <strong>- By { author }</strong>
       </p>
-      <button>Mark as read</button>
+      {isRead ? <button onClick={toggleRead} >Mark as Read</button> :
+
+      <button onClick={toggleRead}>Mark as Unread</button>}
     </div>
   );
 }
